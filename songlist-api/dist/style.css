@@ -1,0 +1,48 @@
+body {
+  top: 0;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+.songlist-hold {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.songlist-hold:hover, .songlist-hold:active, .songlist-hold:focus {
+  overflow-y: auto;
+  overflow: overlay;
+}
+
+.scrollbar-controller {
+  height: 500px;
+  overflow-y: hidden;
+}
+
+.scrollbar-controller:hover, .scrollbar-controller:active, .scrollbar-controller:focus {
+  overflow-y: auto;
+}
+
+/*scroll bar style setting*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0275d8; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5bc0de; 
+}
+/*scroll bar style setting end*/

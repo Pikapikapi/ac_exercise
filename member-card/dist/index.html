@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 認識陌生人-一次搜尋三個結果</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <fieldset>
+    <legend>Which gender you wanna find?:</legend>
+    <div>
+      <span>
+        <input type="radio" id="male" name="gender" value='male'>
+        <label for="male">Male</label>
+      </span>
+      <span>
+        <input type="radio" id="female" name="gender" value='female' checked="checked">
+        <label for="female">Female</label>
+      </span>
+      <span>
+        <input type="radio" id="bothGender" name="gender" value='both'>
+        <label for="bothGender">Both</label>
+      </span>
+    </div>
+  </fieldset>
+  <a href="#" class="btn btn-primary searchButton" id='searchFriends'>find me three friends in a roll</a>
+  <div id="friendZone">
+  </div>
+</body>
+<!-- partial -->
+  <script src='https://unpkg.com/axios/dist/axios.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

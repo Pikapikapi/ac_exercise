@@ -1,0 +1,19 @@
+#card-list-swap {
+  position: absolute;
+  right: 5%;
+}
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* list相關設定 */
+.list-group-item > div {
+  display: inline-block;
+}
+
+.list-group-item > .btn-set-right {
+  position: absolute;
+  right: 5%;
+}

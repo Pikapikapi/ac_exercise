@@ -1,0 +1,36 @@
+<!--
+1.使用者輸入 RGB 色碼，可以轉換成十六進位的 Hex 色碼 (限定 6 位色碼如 #ff6600)。
+=> 要注意數值與Scroll bar的數字變換
+2.可透過 silder 元件直覺調整 RGB 數值，並且同步預覽顏色
+3.畫面呈現可彈性調整，但功能需符合上述兩種版面之一
+規格:
+1.使用 input type="range" 做 slider
+2.用 input 事件取得 slider 數值
+3.從 DOM 抓取出的值是 string，無論瀏覽器是否報錯，都需要轉換成 number 才進一步運用
+4.請使用 JavaScript 原生語法撰寫
+-->
+
+<body>
+  <div id='scroll-panel'>
+    <!--RGB 三原色-->
+    <div>
+      <label for='color-r'>R:</label>
+      <input type="range" id="color-r" min="0" max="255" value='0'>
+      <output>0</output>
+    </div>
+    <div>
+      <label for="color-g">G:</label>
+      <input type="range" id="color-g" min="0" max="255" value='0'>
+      <output>0</output>
+    </div>
+    <div>
+      <label for="color-b">B:</label>
+      <input type="range" id="color-b" min="0" max="255" value='0'>
+      <output>0</output>
+    </div>
+  </div>
+  <!--顯示16進位Hexacode-->
+  <div id='displayHexaCodePanel'>
+    <i id='hexa-code-value'>#000000</i>
+  </div>
+</body>

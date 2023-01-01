@@ -1,0 +1,22 @@
+<div class="m-5">
+  <header class="mb-3">
+    <h4>My Todo</h4>
+    <div class="content__wrapper">
+      <input type="text" placeholder="add item" id="new-todo" class="form--custom form-control me-2">
+      <button id="add-btn" class="btn btn-info add-button">Add</button>
+    </div>
+  </header>
+  <div id='tdPanel' class='d-flex flex-row'>
+    <div id='to-do-content' style="margin-right: 20px">
+      <h4>TODO</h4>
+      <ul id="my-todo" class="list-unstyled" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <!-- display todos here -->
+      </ul>
+    </div>
+    <div id='done-content'>
+      <h4>DONE</h4>
+      <ul id="my-done" class="list-unstyled" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <!-- display todos here -->
+      </ul>
+    </div>
+  </div>
